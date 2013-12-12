@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<configuration xmlns="http://schemas.microsoft.com/.NetConfiguration/v2.0">
+	<configSections>
+		<sectionGroup name="microsoft.web" type="Microsoft.Web.Configuration.MicrosoftWebSectionGroup, Microsoft.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+			<sectionGroup name="scripting" type="Microsoft.Web.Configuration.ScriptingSectionGroup, Microsoft.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+				<sectionGroup name="webServices" type="Microsoft.Web.Configuration.ScriptingWebServicesSectionGroup, Microsoft.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					<section name="jsonSerialization" type="Microsoft.Web.Configuration.ScriptingJsonSerializationSection, Microsoft.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"/>
+					<section name="profileService" type="Microsoft.Web.Configuration.ScriptingProfileServiceSection, Microsoft.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"/>
+					<section name="authenticationService" type="Microsoft.Web.Configuration.ScriptingAuthenticationServiceSection, Microsoft.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"/>
+				</sectionGroup>
+			</sectionGroup>
+		</sectionGroup>
+	</configSections>
+	<appSettings>
+		<add key="EmailFrom" value="connect@mail.com"/>
+		<add key="SMTP" value="mail.mail.com"/>
+		<add key="User" value="nick@mail.com"/>
+		<add key="Password" value="nick"/>
+		<add key="MailName" value="Finance"/>
+		<add key="SiteID" value="00000000"/>
+		<add key="ApplicationName" value="/FWBO"/>
+	</appSettings>
+	<connectionStrings>
+		<add name="FWConnectionString" connectionString="Data Source=10.70.70.100;Persist Security Info=True;Password=fin1q2w3e4;User ID=fin;Initial Catalog=FN" providerName="System.Data.SqlClient"/>
+		<add name="DWRSConnectionString" connectionString="Data Source=10.70.70.101;Persist Security Info=True;Password=2w3e4t;User ID=dwrs;Initial Catalog=bodb_dwrs" providerName="System.Data.SqlClient"/>
+	</connectionStrings>
+	<system.web>
+		<customErrors mode="Off" defaultRedirect="~/ErrorPages/FWErrorPage.aspx">
+			<error statusCode="404" redirect="~/ErrorPages/FileNotFound.aspx"/>
+		</customErrors>
+		<globalization enableClientBasedCulture="true" culture="Auto" uiCulture="Auto"/>
+		<pages styleSheetTheme="Blue">
+			<controls>
+				<add tagPrefix="ajax" namespace="Microsoft.Web.UI" assembly="Microsoft.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"/>
+				<add tagPrefix="ajax" namespace="Microsoft.Web.UI.Controls" assembly="Microsoft.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"/>
+				<add tagPrefix="ajax" namespace="Microsoft.Web.Preview.UI" assembly="Microsoft.Web.Preview"/>
+				<add tagPrefix="ajax" namespace="Microsoft.Web.Preview.UI.Controls" assembly="Microsoft.Web.Preview"/>
+				<add tagPrefix="ajaxToolkit" namespace="AjaxControlToolkit" assembly="AjaxControlToolkit"/>
+			</controls>
+		</pages>
+		<compilation debug="true">
+			<assemblies>
+				<add assembly="Microsoft.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"/>
+				<add assembly="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"/>
+			</assemblies>
+		</compilation>
+		<httpHandlers>
+			<remove verb="*" path="*.asmx"/>
+			<add verb="*" path="*.asmx" validate="false" type="Microsoft.Web.Script.Services.ScriptHandlerFactory, Microsoft.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"/>
+			<add verb="GET" path="ScriptResource.axd" type="Microsoft.Web.Handlers.ScriptResourceHandler" validate="false"/>
+		</httpHandlers>
+		<httpModules>
+			<add name="ScriptModule" type="Microsoft.Web.UI.ScriptModule, Microsoft.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"/>
+		</httpModules>
+		<identity impersonate="true" userName="developper" password="itibc111"/>
+		<authentication mode="Forms">
+			<forms loginUrl="~/BackOffice/Login.aspx" name=".ASPXFORMSAUTH" defaultUrl="~/BackOffice/Default.aspx"/>
+		</authentication>
+		<membership defaultProvider="FWUserProvider">
+			<providers>
+				<clear/>
+				<add name="FWUserProvider" connectionStringName="FWConnectionString" applicationName="/FWBO" enablePasswordRetrieval="false" enablePasswordReset="true" requiresQuestionAndAnswer="true" requiresUniqueEmail="true" passwordFormat="Clear" type="System.Provider.FWUserProvider"/>
+			</providers>
+		</membership>
+		<roleManager defaultProvider="FWRoleProvider" enabled="true" cacheRolesInCookie="true" cookieName=".ASPROLES" cookieTimeout="30" cookiePath="/" cookieRequireSSL="false" cookieSlidingExpiration="true" cookieProtection="All">
+			<providers>
+				<clear/>
+				<add name="FWRoleProvider" connectionStringName="FWConnectionString" applicationName="/FWBO" type="System.Provider.FWRoleProvider"/>
+			</providers>
+		</roleManager>
+	</system.web>
+	<microsoft.web>
+		<scripting>
+			<webServices>
+			</webServices>
+		</scripting>
+	</microsoft.web>
+	<system.webServer>
+		<validation validateIntegratedModeConfiguration="false"/>
+		<modules>
+			<add name="ScriptModule" preCondition="integratedMode" type="Microsoft.Web.UI.ScriptModule, Microsoft.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"/>
+		</modules>
+		<handlers>
+			<remove name="WebServiceHandlerFactory-ISAPI-2.0"/>
+			<add name="ScriptHandlerFactory" verb="*" path="*.asmx" preCondition="integratedMode" type="Microsoft.Web.Script.Services.ScriptHandlerFactory, Microsoft.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"/>
+			<add name="ScriptResource" verb="GET" path="ScriptResource.axd" type="Microsoft.Web.Handlers.ScriptResourceHandler"/>
+		</handlers>
+	</system.webServer>
+</configuration>

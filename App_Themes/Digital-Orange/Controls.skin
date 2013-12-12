@@ -1,0 +1,64 @@
+<%-- GridView --%>
+<asp:GridView runat="server" CssClass="DataWebControlStyle" HeaderStyle-Height="18" CellPadding="1" CellSpacing="1" BorderWidth="0" BackColor="#000000"  AllowPaging="True">
+    <AlternatingRowStyle CssClass="AlternatingRowStyle"/>    
+    <EditRowStyle CssClass="EditRowStyle"/>
+    <EmptyDataRowStyle CssClass="EmptyDataRowStyle" />
+    <FooterStyle CssClass="FooterStyle"/>
+    <HeaderStyle CssClass="HeaderStyle" Font-Size="12px" HorizontalAlign="Center"/> 
+    <PagerStyle CssClass="PagerStyle"/>
+    <RowStyle CssClass="RowStyle" HorizontalAlign="Center" Height="20px"/>
+    <SelectedRowStyle CssClass="SelectedRowStyle"/>
+</asp:GridView>
+
+<asp:GridView runat="server" SkinID="GridView" CssClass="DataWebControlStyle" HeaderStyle-Height="18" CellPadding="1" CellSpacing="1" BorderWidth="0" BackColor="#000000"  AllowPaging="True">
+    <AlternatingRowStyle CssClass="AlternatingRowStyle" />    
+    <EditRowStyle CssClass="EditRowStyle" />
+    <EmptyDataRowStyle CssClass="EmptyDataRowStyle" />
+    <FooterStyle CssClass="FooterStyle"/>
+    <HeaderStyle CssClass="HeaderStyle" Font-Size="12px" HorizontalAlign="Center"/> 
+    <PagerStyle CssClass="PagerStyle" />
+    <RowStyle CssClass="RowStyle" HorizontalAlign="Center" Height="20px"/>
+    <SelectedRowStyle CssClass="SelectedRowStyle"/>
+</asp:GridView>
+
+<%-- END GridView --%>
+
+<%-- DetailsView --%>
+<asp:DetailsView runat="server" CssClass="DataWebControlStyle" HeaderStyle-Height="18" CellPadding="1" CellSpacing="1" BorderWidth="0" BackColor="#000000">
+    <AlternatingRowStyle CssClass="DetailsViewAlternatingRowStyle" />
+    <RowStyle CssClass="DetailsViewRowStyle"/>
+    <FieldHeaderStyle CssClass="FieldHeaderStyle" Height="30px"/>
+    <HeaderStyle CssClass="DetailsViewHeaderStyle" Font-Size="12px" />
+    <FooterStyle CssClass="FooterStyle" VerticalAlign="Middle"/>
+    <CommandRowStyle CssClass="CommandRowStyle"/>
+</asp:DetailsView>
+
+<asp:DetailsView runat="server" SkinID="DetailsView" CssClass="DataWebControlStyle" HeaderStyle-Height="18" CellPadding="1" CellSpacing="1" BorderWidth="0" BackColor="#000000">
+   <AlternatingRowStyle CssClass="DetailsViewAlternatingRowStyle" Font-Size="12px" />
+   <RowStyle CssClass="DetailsViewRowStyle" />
+   <FieldHeaderStyle CssClass="FieldHeaderStyle"/>
+   <HeaderStyle CssClass="DetailsViewHeaderStyle"/>
+   <FooterStyle CssClass="FooterStyle" VerticalAlign="Middle"/>
+   <CommandRowStyle Height="25px" BackColor="#C0FFC0"/>
+</asp:DetailsView>
+
+<%-- END DetailsView --%>
+
+
+<asp:TextBox CssClass="TextBox" runat="server"></asp:TextBox>
+
+<asp:Button CssClass="Button" runat="server"/>
+
+<asp:DropDownList CssClass="TextBox" runat="server"></asp:DropDownList>
+
+<asp:FileUpload runat="server" CssClass="TextBox"/>
+
+
+<asp:TreeView Runat="server" ShowExpandCollapse="False" NodeIndent="0">
+    <NodeStyle CssClass="sitemap-menu" Width="189px"  Height="18px"/>
+    <RootNodeStyle CssClass="sitemap-menu-head" Width="180px"/>
+    <SelectedNodeStyle CssClass="sitemap-menu-active"/>
+    <ParentNodeStyle CssClass="sitemap-menu-head"/>
+    <HoverNodeStyle CssClass="sitemap-menu"/>
+    <LeafNodeStyle CssClass="sitemap-menu"/>
+</asp:TreeView>

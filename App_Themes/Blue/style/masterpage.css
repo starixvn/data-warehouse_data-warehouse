@@ -1,0 +1,24 @@
+﻿
+.tab-language {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #8EADD5;
+	background-color:#ECECEC;
+}
+
+.header-content{
+	background: url(../../Blue/images/masterpage/images-tab-conent.gif) repeat-x right top; 
+	background-color:#FFFFFF;
+	border-left: 1px solid #224FAD;
+	border-top: 3px solid #224FAD;
+	border-right: 1px solid #224FAD;
+	border-bottom: 1px solid #224FAD;
+}
+
+.program-content{
+	background-color:#FFFFFF;
+	border-left: 1px solid #224FAD;
+	border-top: 3px solid #224FAD;
+	border-right: 1px solid #224FAD;
+	border-bottom: 1px solid #224FAD;
+}

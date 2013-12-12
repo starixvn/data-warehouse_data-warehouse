@@ -1,0 +1,95 @@
+﻿
+.logo {
+	background: url(../../Blue/images/masterpage/images-logo.gif) repeat-x right bottom;
+	height:46px;
+	width:166px;
+}
+
+.bluebase {
+	background: url(../../Blue/images/masterpage/tab_bluebase.gif);
+	height:6px;
+}
+
+.bottomfooter {
+	background: url(../../Blue/images/masterpage/bottomfooter.gif);
+	height:16px;
+	width:627px;
+}
+
+.body-lefttopcorner {
+	background: url(../../Blue/images/masterpage/image-body-lefttopcorner.gif);
+	height:9px;
+	width:9px;
+}
+
+.body-toptile {
+	background: url(../../Blue/images/masterpage/image-body-toptile.gif) repeat-x right bottom;
+	height:9px;
+}
+
+.body-righttop {
+	background: url(../../Blue/images/masterpage/image-body-righttop.gif);
+	height:9px;
+	width:9px;
+}
+
+.body-lefttile {
+	background: url(../../Blue/images/masterpage/image-body-lefttile.gif);
+	width:9px;
+}
+
+.body-righttile {
+	background: url(../../Blue/images/masterpage/image-body-righttile.gif);
+	width:9px;
+}
+
+.body-leftbottomcorner {
+	background: url(../../Blue/images/masterpage/image-body-leftbottomcorner.gif);
+	height:9px;
+	width:9px;
+}
+
+.body-bottomtile {
+	background: url(../../Blue/images/masterpage/image-body-bottomtile.gif) repeat-x right bottom;
+	height:9px;
+}
+
+.body-rightbottomcorner {
+	background: url(../../Blue/images/masterpage/image-body-rightbottomcorner.gif);
+	height:9px;
+	width:9px;
+}
+
+
+.tab_sel_lefttaper {
+	background: url(../../Blue/images/tabrole/tab_sel_lefttaper.gif);
+	height:20px;
+	width:7px;
+}
+
+.tab_sel_bg {
+	background: url(../../Blue/images/tabrole/tab_sel_bg.gif);
+}
+
+.tab_sel_righttaper {
+	background: url(../../Blue/images/tabrole/tab_sel_righttaper.gif);
+	height:20px;
+	width:7px;
+}
+
+
+.tab_unsel_lefttaper{
+	background: url(../../Blue/images/tabrole/tab_unsel_lefttaper.gif);
+	height:20px;
+	width:7px;
+}
+
+.tab_unsel_bg {
+	background: url(../../Blue/images/tabrole/tab_unsel_bg.gif);
+}
+
+.tab_unsel_righttaper  {
+	background: url(../../Blue/images/tabrole/tab_unsel_righttaper.gif);
+	height:20px;
+	width:7px;
+}

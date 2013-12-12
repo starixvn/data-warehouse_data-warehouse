@@ -1,0 +1,63 @@
+﻿.sitemap-menu {
+	color: #000000;
+	height:auto;
+	text-decoration:none;
+	height:14px;
+
+}
+.sitemap-menu a{
+	background: url(../../Blue/images/masterpage/images-menu-leftnavoff.gif) repeat-x left bottom #E4EEF5;
+	text-align: right;
+	vertical-align: middle;
+	color: #111;
+	text-decoration:none;
+	display: block;
+	padding:5px;
+	border-bottom:1px solid #98AFC9;
+	height:14px;
+}
+
+.sitemap-menu a:hover{
+	background: url(../../Blue/images/masterpage/images-menu-leftnavon2.gif)  repeat-x left bottom #CCDEEB;
+	color: #000000;
+	border-bottom:1px solid #98AFC9;
+	height:14px;
+}
+
+.sitemap-menu-active a:hover {
+	background: url(../../Blue/images/masterpage/images-menu-leftnavactive.gif) repeat-x right bottom #B8CAE0;
+	border-bottom:1px solid #98AFC9;
+	font-weight: bold;
+	color: #000000;
+	text-align: right;
+	vertical-align: middle;
+	padding:5px;
+	height:14px;
+}
+
+.sitemap-menu-active a {
+	background: url(../../Blue/images/masterpage/images-menu-leftnavactive.gif) repeat-x right bottom #B8CAE0;
+	border-bottom:1px solid #98AFC9;
+	font-weight: bold;
+	color: #000000;
+	text-align: right;
+	vertical-align: middle;
+	padding:5px;
+	height:14px;
+}
+
+.sitemap-menu-head {
+	background-color: #5670A9;
+	border-left:2px solid #7F93BF;
+	border-top:2px solid #7F93BF;
+	border-right:2px solid #213052;
+	border-bottom:2px solid #213052;
+	font-size: 11px;
+	font-weight: bold;
+	color: #ffffff;
+	text-align: right;
+	vertical-align: middle;
+	text-decoration:none;
+	padding-right:5px;
+	height:14px;
+}

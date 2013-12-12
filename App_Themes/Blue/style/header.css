@@ -1,0 +1,48 @@
+﻿.hearder-link
+{
+	color: #1D4272;
+}
+
+.hearder-link a {
+	color: #1D4272;
+}
+
+.hearder-link a:link {
+	color: #1D4272;
+}
+
+.hearder-link a:visited {
+	color: #1D4272;
+}
+
+.header-top
+{
+	background: url(../../Blue/images/masterpage/top-header.gif) repeat-x right top; 
+	background-color:#C1CDDE;
+}
+
+.tablinkwhite{
+	font-weight: bold;
+	color: #FFFFFF;
+	display: block;
+	text-decoration: none;
+	width: 100%;
+}
+
+a.tablinkwhite:hover {
+	color: #FFFFFF;
+	display: block;
+}
+
+.tablink{
+	font-weight: bold;
+	color: #000000;
+	display: block;
+	text-decoration: none;
+	width: 100%;
+}
+
+a.tablink:hover {
+	color: #FFFFFF;
+	display: block;
+}

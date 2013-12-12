@@ -1,0 +1,73 @@
+﻿.tab-top {
+	background: url(../../Digital-Orange/images/masterpage/images-tab-top.gif) ;
+	height:22px;
+}
+
+.tab-top-logo {
+	background: url(../../Digital-Orange/images/masterpage/images-tab-top-logo.gif) ;
+	height:9px;
+}
+
+.logo {
+	background: url(../../Digital-Orange/images/masterpage/images-logo.gif) repeat-x right top; 
+	height:90px;
+	width:275px;
+}
+
+.tab-logo {
+	background: url(../../Digital-Orange/images/masterpage/images-tab-logo.gif) repeat-x right top; 
+	height:90px;
+	width:670px;
+}
+
+
+.tab-buttom-logo {
+	background: url(../../Digital-Orange/images/masterpage/images-tab-buttom-logo.gif) repeat-x right top; 
+	height:23px;
+}
+
+.tab-back {
+	background: url(../../Digital-Orange/images/masterpage/images-tab-back.gif) repeat-x right top; 
+	height:41px;
+}
+
+.bg {
+	background: url(../../Digital-Orange/images/masterpage/images-bg.gif);
+}
+
+
+.master-content-1 {
+	background: url(../../Digital-Orange/images/masterpage/images-master-content-1.gif);
+}
+
+.master-content-2 {
+	background: url(../../Digital-Orange/images/masterpage/images-master-content-2.gif);
+}
+
+.master-content-3 {
+	background: url(../../Digital-Orange/images/masterpage/images-master-content-3.gif);
+}
+
+.master-content-4 {
+	background: url(../../Digital-Orange/images/masterpage/images-master-content-4.gif);
+}
+
+.master-content-5 {
+	background: url(../../Digital-Orange/images/masterpage/images-master-content-5.gif);
+}
+
+.master-content-6 {
+	background: url(../../Digital-Orange/images/masterpage/images-master-content-6.gif);
+}
+
+.master-content-7 {
+	background: url(../../Digital-Orange/images/masterpage/images-master-content-7.gif);
+}
+
+.master-content-8 {
+	background: url(../../Digital-Orange/images/masterpage/images-master-content-8.gif);
+}
+
+.master-content-9 {
+	background: url(../../Digital-Orange/images/masterpage/images-master-content-9.gif);
+}

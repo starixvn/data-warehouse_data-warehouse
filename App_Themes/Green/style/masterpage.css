@@ -1,0 +1,24 @@
+﻿
+.tab-language {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #82CBB4;
+	background-color:#ECECEC;
+}
+
+.header-content{
+	background: url(../../Green/images/masterpage/images-tab-conent.gif) repeat-x right top; 
+	background-color:#FFFFFF;
+	border-left: 1px solid #058E75;
+	border-top: 3px solid #058E75;
+	border-right: 1px solid #058E75;
+	border-bottom: 1px solid #058E75;
+}
+
+.program-content{
+	background-color:#FFFFFF;
+	border-left: 1px solid #058E75;
+	border-top: 3px solid #058E75;
+	border-right: 1px solid #058E75;
+	border-bottom: 1px solid #058E75;
+}

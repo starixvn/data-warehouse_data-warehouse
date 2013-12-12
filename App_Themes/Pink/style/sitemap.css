@@ -1,0 +1,63 @@
+﻿.sitemap-menu {
+	color: #000000;
+	height:auto;
+	text-decoration:none;
+	height:14px;
+
+}
+.sitemap-menu a{
+	background: url(../../Pink/images/masterpage/images-menu-leftnavoff.gif) repeat-x left bottom #D8A0C3;
+	text-align: right;
+	vertical-align: middle;
+	color: #111;
+	text-decoration:none;
+	display: block;
+	padding:5px;
+	border-bottom:1px solid #D8A0C3;
+	height:14px;
+}
+
+.sitemap-menu a:hover{
+	background: url(../../Pink/images/masterpage/images-menu-leftnavon2.gif)  repeat-x left bottom #D8A0C3;
+	color: #000000;
+	border-bottom:1px solid #D8A0C3;
+	height:14px;
+}
+
+.sitemap-menu-active a:hover {
+	background: url(../../Pink/images/masterpage/images-menu-leftnavactive.gif) repeat-x right bottom  #D8A0C3;
+	border-bottom:1px solid #D8A0C3;
+	font-weight: bold;
+	color: #000000;
+	text-align: right;
+	vertical-align: middle;
+	padding:5px;
+	height:14px;
+}
+
+.sitemap-menu-active a {
+	background: url(../../Pink/images/masterpage/images-menu-leftnavactive.gif) repeat-x right bottom #D8A0C3;
+	border-bottom:1px solid#D8A0C3;
+	font-weight: bold;
+	color: #000000;
+	text-align: right;
+	vertical-align: middle;
+	padding:5px;
+	height:14px;
+}
+
+.sitemap-menu-head {
+	background-color: #B3608E;
+	border-left:2px solid #E2A3C8;
+	border-top:2px solid #E2A3C8;
+	border-right:2px solid #C16799;
+	border-bottom:2px solid #C16799;
+	font-size: 11px;
+	font-weight: bold;
+	color: #ffffff;
+	text-align: right;
+	vertical-align: middle;
+	text-decoration:none;
+	padding-right:5px;
+	height:14px;
+}

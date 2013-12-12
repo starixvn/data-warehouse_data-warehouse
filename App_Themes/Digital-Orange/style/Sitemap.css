@@ -1,0 +1,12 @@
+﻿.menuOver {
+	CURSOR: hand; COLOR: #990000; BACKGROUND-COLOR: #fae886
+}
+.menuOut {
+	BACKGROUND-IMAGE: url(../../Digital-Orange/images/masterpage/menu-bg.gif); COLOR: #000000
+}
+.menuSubOver {
+	CURSOR: hand; COLOR: #990000; BACKGROUND-COLOR: #fdcd54
+}
+.menuSubOut {
+	COLOR: #000000; BACKGROUND-COLOR: #ffb700
+}

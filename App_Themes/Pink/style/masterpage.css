@@ -1,0 +1,24 @@
+﻿
+.tab-language {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #D68AB5;
+	background-color:#F0F0F0;
+}
+
+.header-content{
+	background: url(../../Pink/images/masterpage/images-tab-conent.gif) repeat-x right top; 
+	background-color:#FFFFFF;
+	border-left: 1px solid #CC5A9A;
+	border-top: 3px solid #CC5A9A;
+	border-right: 1px solid #CC5A9A;
+	border-bottom: 1px solid #CC5A9A;
+}
+
+.program-content{
+	background-color:#FFFFFF;
+	border-left: 1px solid #CC5A9A;
+	border-top: 3px solid #CC5A9A;
+	border-right: 1px solid #CC5A9A;
+	border-bottom: 1px solid #CC5A9A;
+}

@@ -1,0 +1,48 @@
+﻿.hearder-link
+{
+	color: #FFFFFF;
+}
+
+.hearder-link a {
+	color: #FFFFFF;
+}
+
+.hearder-link a:link {
+	color: #FFFFFF;
+}
+
+.hearder-link a:visited {
+	color: #FFFFFF;
+}
+
+.header-top
+{
+	background: url(../../Pink/images/masterpage/top-header.gif) repeat-x right top; 
+	background-color:#DDA3C0;
+}
+
+.tablinkwhite{
+	font-weight: bold;
+	color: #FFFFFF;
+	display: block;
+	text-decoration: none;
+	width: 100%;
+}
+
+a.tablinkwhite:hover {
+	color: #FFFFFF;
+	display: block;
+}
+
+.tablink{
+	font-weight: bold;
+	color: #000000;
+	display: block;
+	text-decoration: none;
+	width: 100%;
+}
+
+a.tablink:hover {
+	color: #FFFFFF;
+	display: block;
+}
