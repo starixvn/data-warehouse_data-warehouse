@@ -9,14 +9,25 @@
 <body>
     <form id="form1" runat="server">
     <center>
-            
-            <h2 style="color: Red;margin-top:150px;">
-                Oppss... An error occurred while processing your request.
-            </h2>
-                
-            
-        
+        <h2 style="color: Red; margin-top: 150px;">
+            Oppss... An error occurred while processing your request.
+        </h2>
     </center>
     </form>
+    <!-- Piwik -->
+    <script type="text/javascript">
+        var _paq = _paq || [];
+        _paq.push(["trackPageView"]);
+        _paq.push(["enableLinkTracking"]);
+
+        (function () {
+            var u = (("https:" == document.location.protocol) ? "https" : "http") + "://piwik.starific.net/";
+            _paq.push(["setTrackerUrl", u + "piwik.php"]);
+            _paq.push(["setSiteId", "7"]);
+            var d = document, g = d.createElement("script"), s = d.getElementsByTagName("script")[0]; g.type = "text/javascript";
+            g.defer = true; g.async = true; g.src = u + "piwik.js"; s.parentNode.insertBefore(g, s);
+        })();
+    </script>
+    <!-- End Piwik Code -->
 </body>
 </html>

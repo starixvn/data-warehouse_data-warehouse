@@ -64,8 +64,7 @@
                                         </td>
                                         <td>
                                             <asp:TextBox ID="txConfirmPassword" runat="server" TextMode="Password" Width="180px"></asp:TextBox><br />
-                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
-                                                ErrorMessage="Confirmation Password is Empty" 
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Confirmation Password is Empty"
                                                 ControlToValidate="txConfirmPassword"></asp:RequiredFieldValidator>
                                             <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="txNewPassword"
                                                 ControlToValidate="txConfirmPassword" ErrorMessage="Password does not match."
@@ -95,5 +94,20 @@
         </table>
     </div>
     </form>
+    <!-- Piwik -->
+    <script type="text/javascript">
+        var _paq = _paq || [];
+        _paq.push(["trackPageView"]);
+        _paq.push(["enableLinkTracking"]);
+
+        (function () {
+            var u = (("https:" == document.location.protocol) ? "https" : "http") + "://piwik.starific.net/";
+            _paq.push(["setTrackerUrl", u + "piwik.php"]);
+            _paq.push(["setSiteId", "7"]);
+            var d = document, g = d.createElement("script"), s = d.getElementsByTagName("script")[0]; g.type = "text/javascript";
+            g.defer = true; g.async = true; g.src = u + "piwik.js"; s.parentNode.insertBefore(g, s);
+        })();
+    </script>
+    <!-- End Piwik Code -->
 </body>
 </html>

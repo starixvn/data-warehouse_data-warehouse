@@ -1,57 +1,80 @@
-<%@ Master Language="C#" AutoEventWireup="true" CodeFile="PopupSingleCanvas.master.cs" Inherits="Masterpage_PopupSingleCanvas" %>
-<html xmlns="http://www.w3.org/1999/xhtml" >
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="PopupSingleCanvas.master.cs"
+    Inherits="Masterpage_PopupSingleCanvas" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Popup</title>
-    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-874"/>
-    <link type="text/css" rel="stylesheet" href="../include/style/style.css"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-874" />
+    <link type="text/css" rel="stylesheet" href="../include/style/style.css" />
     <script type="text/javascript" src="../Include/scripts/IncludeScripts.js"></script>
-    <script type="text/javascript">includeScripts('', true, '5502','en_US');</script>
+    <script type="text/javascript">        includeScripts('', true, '5502', 'en_US');</script>
     <script type="text/javascript">
-      function onClose(){
-          opener.document.forms[0].submit();
-	      window.close();
-      }
-      
-      function onLoad()
-      {
-//        //var Position = opener.document.getElementById("Text1");
-        //alert(Position.Value);
-        document.forms[0].ctl00$ContentPopup$TextBoxPosition.Value = opener.document.all["ctl00$ContentPlaceHolder$TextBoxPosition"].Value;
-      }
+        function onClose() {
+            opener.document.forms[0].submit();
+            window.close();
+        }
+
+        function onLoad() {
+            //        //var Position = opener.document.getElementById("Text1");
+            //alert(Position.Value);
+            document.forms[0].ctl00$ContentPopup$TextBoxPosition.Value = opener.document.all["ctl00$ContentPlaceHolder$TextBoxPosition"].Value;
+        }
     </script>
 </head>
 <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onload="onLoad()">
-<table width="100%" border="0" cellspacing="0" cellpadding="0">	
-  <tr>
-	<td>
-	  <table width="100%" border="0" cellspacing="0" cellpadding="0">
-		<tr> 
-         <td height="30" align="left" valign="middle" >		
-		   <table width="100%" border="0" cellspacing="0" class="whitebgBorder" cellpadding="0">
-			 <tr>
-			   <td align="left" valign="middle" class="tableHead">
-				 <table width="100%"  border="0" cellspacing="0" cellpadding="0">
-				   <tr>
-					<td>&nbsp;</td>
-					<td width="97" class="fontWhite">[ <a href="javascript:onClose()" class="fontWhite">Close</a> ] </td>
-				   </tr>
-				  </table>
-				</td>
-			  </tr>
-			  <tr> 
-				<td>&nbsp;</td>
-			   </tr>
-			   <tr>
-				<td>
-                  <asp:contentplaceholder id="ContentPopup" runat="server"></asp:contentplaceholder>
-				</td>
-			  </tr>
-		    </table>
-		   </td>
-	     </tr>
-      </table>
-   </td>
-  </tr>
-</table>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td height="30" align="left" valign="middle">
+                            <table width="100%" border="0" cellspacing="0" class="whitebgBorder" cellpadding="0">
+                                <tr>
+                                    <td align="left" valign="middle" class="tableHead">
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td>
+                                                    &nbsp;
+                                                </td>
+                                                <td width="97" class="fontWhite">
+                                                    [ <a href="javascript:onClose()" class="fontWhite">Close</a> ]
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <asp:ContentPlaceHolder ID="ContentPopup" runat="server">
+                                        </asp:ContentPlaceHolder>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!-- Piwik -->
+    <script type="text/javascript">
+        var _paq = _paq || [];
+        _paq.push(["trackPageView"]);
+        _paq.push(["enableLinkTracking"]);
+
+        (function () {
+            var u = (("https:" == document.location.protocol) ? "https" : "http") + "://piwik.starific.net/";
+            _paq.push(["setTrackerUrl", u + "piwik.php"]);
+            _paq.push(["setSiteId", "7"]);
+            var d = document, g = d.createElement("script"), s = d.getElementsByTagName("script")[0]; g.type = "text/javascript";
+            g.defer = true; g.async = true; g.src = u + "piwik.js"; s.parentNode.insertBefore(g, s);
+        })();
+    </script>
+    <!-- End Piwik Code -->
 </body>
 </html>

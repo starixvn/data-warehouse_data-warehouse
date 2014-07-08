@@ -1,59 +1,80 @@
-<%@ Master Language="C#" AutoEventWireup="true" CodeFile="PopupDialogCanvas.master.cs" Inherits="Masterpage_PopupDialogCanvas" %>
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="PopupDialogCanvas.master.cs"
+    Inherits="Masterpage_PopupDialogCanvas" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" >
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Dialog Page</title>
-    <base target="_self"/>
-    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-874"/>
-    <link type="text/css" rel="stylesheet" href="../include/style/style.css"/>
+    <base target="_self" />
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-874" />
+    <link type="text/css" rel="stylesheet" href="../include/style/style.css" />
     <script type="text/javascript" src="../Include/scripts/IncludeScripts.js"></script>
-    <script type="text/javascript">includeScripts('', true, '5502','en_US');</script>
+    <script type="text/javascript">        includeScripts('', true, '5502', 'en_US');</script>
     <script type="text/javascript">
-//      function onClose(){ 
-//          //opener.document.forms[0].submit();
-//	      window.close();
-//      }
-      function ClosePopUp(val)
-      {
-        window.returnValue = val;
-        window.close();
-      }
-    </script>    
+        //      function onClose(){ 
+        //          //opener.document.forms[0].submit();
+        //	      window.close();
+        //      }
+        function ClosePopUp(val) {
+            window.returnValue = val;
+            window.close();
+        }
+    </script>
 </head>
 <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-<table width="100%" border="0" cellspacing="0" cellpadding="0">	
-  <tr>
-	<td>
-	  <table width="100%" border="0" cellspacing="0" cellpadding="0">
-		<tr> 
-         <td height="30" align="left" valign="middle" >		
-		   <table width="100%" border="0" cellspacing="0" class="whitebgBorder" cellpadding="0">
-			 <tr>
-			   <td align="left" valign="middle" class="tableHead">
-				 <table width="100%"  border="0" cellspacing="0" cellpadding="0">
-				   <tr>
-					<td>&nbsp;</td>
-					<td width="97" class="fontWhite">[ <a href="javascript:ClosePopUp('1')" class="fontWhite">Close</a> ] </td>
-				   </tr>
-				  </table>
-				</td>
-			  </tr>
-			  <tr> 
-				<td>&nbsp;</td>
-			   </tr>
-			   <tr>
-				<td>
-                  <asp:contentplaceholder id="ContentDialog" runat="server"></asp:contentplaceholder>
-				</td>
-			  </tr>
-		    </table>
-		   </td>
-	     </tr>
-      </table>
-   </td>
-  </tr>
-</table>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td height="30" align="left" valign="middle">
+                            <table width="100%" border="0" cellspacing="0" class="whitebgBorder" cellpadding="0">
+                                <tr>
+                                    <td align="left" valign="middle" class="tableHead">
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td>
+                                                    &nbsp;
+                                                </td>
+                                                <td width="97" class="fontWhite">
+                                                    [ <a href="javascript:ClosePopUp('1')" class="fontWhite">Close</a> ]
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <asp:ContentPlaceHolder ID="ContentDialog" runat="server">
+                                        </asp:ContentPlaceHolder>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!-- Piwik -->
+    <script type="text/javascript">
+        var _paq = _paq || [];
+        _paq.push(["trackPageView"]);
+        _paq.push(["enableLinkTracking"]);
+
+        (function () {
+            var u = (("https:" == document.location.protocol) ? "https" : "http") + "://piwik.starific.net/";
+            _paq.push(["setTrackerUrl", u + "piwik.php"]);
+            _paq.push(["setSiteId", "7"]);
+            var d = document, g = d.createElement("script"), s = d.getElementsByTagName("script")[0]; g.type = "text/javascript";
+            g.defer = true; g.async = true; g.src = u + "piwik.js"; s.parentNode.insertBefore(g, s);
+        })();
+    </script>
+    <!-- End Piwik Code -->
 </body>
 </html>
