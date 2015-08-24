@@ -25,6 +25,10 @@ public partial class BackOffice_Masterpage_ProgramNameControl : System.Web.UI.Us
                 string Title = _FWPrograms.GetProgramName(ProgramId);
                 LabelImage.Text = Image;
                 ProgramName.Text = Title;
+
+                string menu = Request.QueryString["RoleName"];
+                string reportName = menu + " - " + Title;
+                Page.Title = reportName;
             }
         }
         catch { }
