@@ -8,6 +8,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
+using System.FrameWork;
 
 public partial class _MailLogs : System.Web.UI.Page
 {
@@ -16,6 +17,16 @@ public partial class _MailLogs : System.Web.UI.Page
         if (!IsPostBack)
         {
             TextBoxDate.Text = DateTime.Now.ToString("dd/MM/yyyy");
+
+            string ProgramId = Request.QueryString["ProgramId"];
+            if (!string.IsNullOrEmpty(ProgramId))
+            {
+                FWPrograms _FWPrograms = new FWPrograms();
+                string Title = _FWPrograms.GetProgramName(ProgramId);
+                string menu = Request.QueryString["RoleName"];
+                string reportName = menu + " - " + Title;
+                Page.Title = reportName;
+            }
         }
     }
     //protected void TimerLoad_Tick(object sender, EventArgs e)

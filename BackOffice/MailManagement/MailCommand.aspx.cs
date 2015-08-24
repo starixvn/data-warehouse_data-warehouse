@@ -14,6 +14,7 @@ using System.Utility;
 //using System.Control;
 using System.DWRS;
 using System.MailManagement;
+using System.FrameWork;
 
 public partial class _MailCommand : System.Web.UI.Page
 {
@@ -39,6 +40,17 @@ public partial class _MailCommand : System.Web.UI.Page
         if (!IsPostBack)
         {
             DropDownListReport.DataBind();
+
+            string ProgramId = Request.QueryString["ProgramId"];
+            if (!string.IsNullOrEmpty(ProgramId))
+            {
+                FWPrograms _FWPrograms = new FWPrograms();
+                string Title = _FWPrograms.GetProgramName(ProgramId);
+                string menu = Request.QueryString["RoleName"];
+                string reportName = menu + " - " + Title;
+                Page.Title = reportName;
+            }
+            
         }
         GetReportsDetail();
         PARAMS = Request.Params;
