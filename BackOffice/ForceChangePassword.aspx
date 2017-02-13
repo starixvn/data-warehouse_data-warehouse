@@ -94,6 +94,10 @@
         </table>
     </div>
     </form>
+
+    <% 
+        string username = System.Utility.ServiceUtility.GetUserName();
+    %>
     <!-- Piwik -->
         <script type="text/javascript">
             var _paq = _paq || [];
@@ -103,6 +107,7 @@
                 var u = "https://pw.detecas.com/";
                 _paq.push(['setTrackerUrl', u + 'piwik.php']);
                 _paq.push(['setSiteId', 33]);
+                _paq.push(['setUserId', '<%=username%>');
                 var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
                 g.type = 'text/javascript'; g.async = true; g.defer = true; g.src = u + 'piwik.js'; s.parentNode.insertBefore(g, s);
             })();
