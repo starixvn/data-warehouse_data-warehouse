@@ -1,9 +1,11 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "data-warehouse", ".", "{2A477962-1E91-4603-BBE0-A067081470A1}"
 	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv2.0"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
 		Debug.AspNetCompiler.VirtualPath = "/data-warehouse"
 		Debug.AspNetCompiler.PhysicalPath = "..\data-warehouse\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\data-warehouse\"
@@ -19,6 +21,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "data-warehouse", ".", "{2A4
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "64393"
+		SlnRelativePath = "..\data-warehouse\"
 	EndProjectSection
 EndProject
 Global
